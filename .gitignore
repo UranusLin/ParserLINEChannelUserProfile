@@ -952,3 +952,10 @@ dmypy.json
 cython_debug/
 
 .export/*
+/.idea/csv-plugin.xml
+/.idea/aws.xml
+/.idea/misc.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/export/user_profile.csv
+/.idea/vcs.xml
