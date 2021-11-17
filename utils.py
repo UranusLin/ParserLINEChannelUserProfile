@@ -9,6 +9,9 @@ def call_line_get_userId():
     headers = {"Authorization": "Bearer " + config.line_access_token}
     user_list = []
     res = re.get(url, headers=headers).json()
+    if res.get("message"):
+        print(res.get("message"))
+        return []
     user_list = user_list + res.get("userIds")
     while res.get("next") is not None:
         res = re.get(url + "&start=" + res.get("next"), headers=headers).json()

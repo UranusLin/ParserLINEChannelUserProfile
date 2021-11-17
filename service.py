@@ -7,14 +7,15 @@ def get_channel_users():
     print("get users count: " + str(len(user_list)))
     count = 0
     profile_list = []
-    # get all user profile form user id
-    for i in user_list:
-        call_line_get_user_profile(profile_list, i)
-        count += 1
-        if count % 100 == 0:
-            print("get user count: " + str(count))
-    print("total get " + str(len(profile_list)) + " user profile")
-    print("export user profile to csv")
-    # export user profile to csv
-    export_user_profile(profile_list)
-    print("All jobs done")
+    if len(user_list) > 0:
+        # get all user profile form user id
+        for i in user_list:
+            call_line_get_user_profile(profile_list, i)
+            count += 1
+            if count % 100 == 0:
+                print("get user count: " + str(count))
+        print("total get " + str(len(profile_list)) + " user profile")
+        print("export user profile to csv")
+        # export user profile to csv
+        export_user_profile(profile_list)
+        print("All jobs done")
