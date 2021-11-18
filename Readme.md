@@ -1,8 +1,8 @@
-##ParserLINEChannelUserProfile
-###Only for verified or premium accounts.
+## ParserLINEChannelUserProfile
+### Only for verified or premium accounts.
 This project is sample to get all channel user's profile and export to csv
 
-###How to use
+### How to use
 1. go to [LINE DEV website](https://developers.line.biz/console/)
 2. get Messaging API Channel access token
    
